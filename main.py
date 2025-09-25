@@ -5,8 +5,6 @@ Prix=[]
 
 functions.getdata("produits.txt",produits,"Prix.txt", Prix)
 
-
-
 #1
 ConbinList= functions.ConbainList(produits,Prix)
 print(ConbinList)
@@ -23,11 +21,20 @@ for x in FilterPaires:
 
 #4-5
 SortingList = functions.Sorting(ConbinList)
-print(SortingList)
+print("SortingList :",SortingList)
 
-#7
+#7-1
 PrixCher = functions.GetMax(ConbinList)
-print("Max :",PrixCher)
+print("Max :",PrixCher[0][0], "Prix :",PrixCher[0][1])
+
+#4
+ConbinList.sort(key=lambda x : x[1], reverse=False)
+print(ConbinList)
+
+
+#7-2
+FinalList100=functions.GetMax2(ConbinList)
+print(FinalList100)
 
 
 
