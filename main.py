@@ -25,20 +25,27 @@ print("SortingList :",SortingList)
 
 #7-1
 PrixCher = functions.GetMax(ConbinList)
-print("Max :",PrixCher[0][0], "Prix :",PrixCher[0][1])
+print("Max Prod:",PrixCher[0][0], "Prix :",PrixCher[0][1])
 
 #4
 ConbinList.sort(key=lambda x : x[1], reverse=False)
 print(ConbinList)
 
-
 #7-2
-FinalList100=functions.GetMax2(ConbinList)
-print(FinalList100)
+MinList=functions.GetMin2(ConbinList)
+print("Min Prod :",MinList[0][0], "Prix :",MinList[0][1])
+
+
+#8
 
 
 
 
+#plus
+Min = ConbinList[0]
+print("Min Prod:",Min[0], "Prix :",Min[1])
+Max = ConbinList[-1]
+print("Max Prod:",Max[0], "Prix :",Max[1])
 
 
 

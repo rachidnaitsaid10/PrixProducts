@@ -27,8 +27,17 @@ def GetMax(List0):
     ProductMax = list(filter(lambda x : x[1] == MaxPrix, List0))
     return ProductMax;
 
-def GetMax2(List3):
-    MaxPrix = max(map((lambda x : x[1]), List3))
-    ProductMax = list(filter(lambda x : x[1] == MaxPrix, List3))
-    return ProductMax;
+def GetMin2(List3):
+    MinPrix = min(map((lambda x : x[1]), List3))
+    ProductMin = list(filter(lambda x : x[1] == MinPrix, List3))
+    return ProductMin;
+
+def Luxe(ListLux)
+Lux = list(map(lambda x : x[1] >= 1000, ListLux))
+print("Lux :",len(Lux))
+for i in range(0,(len(Lux))):
+    if Lux[i] == True:
+        print(f"{ConbinList[i][0]} Cout {ConbinList[i][1]} DH (LUXE)")
+    elif Lux[i] == False:
+        print(f"{ConbinList[i][0]} Cout {ConbinList[i][1]} DH")
 
