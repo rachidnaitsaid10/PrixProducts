@@ -13,3 +13,17 @@ def FilterPaire(list2):
 def Sorting(list3):
     return list3
 
+def getdata(filename1, mylist1, filename2, mylist2):
+    with open(filename1,"r") as file:
+        for line in file:
+            mylist1.append(line.strip())
+    with open(filename2,"r") as file:
+        for line in file:
+            mylist2.append(int(line.strip()))
+    return mylist1, mylist2;
+
+def GetMax(List0):
+    MaxPrix = max(map((lambda x : x[1]), List0))
+    ProductMax = list(filter(lambda x : x[1] == MaxPrix, List0))
+    return ProductMax;
+
