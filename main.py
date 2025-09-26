@@ -67,8 +67,6 @@ print(ConbinList)
 # Lux1 = list(map(lambda x : f"{x[0]} Cout {x[1]} DH (LUXE)" if x[1] >= 1000  else f"{x[0]} Cout {x[1]} DH" , ConbinList))
 # print(Lux1)
 
-
-
 # -----------------------------------------------------------------
 # functions.AddProduct(produits,Prix)
 #----------------------------------------------------------------
@@ -85,11 +83,11 @@ def menu():
     Action = 0
     while Action != 4 or Action == "":
 
+        print("----------------------------------------------------------")
         print("1- Pour Affichage ")
         print("2- Pour Search ")
         print("3- Pour Remove ")
         print("4- Pour Quitte ")
-        print("----------------------------------------------------------")
 
 
         Action = int(input("Veuillez choisir une action de la liste (1-4):"))
@@ -105,4 +103,7 @@ def menu():
         elif Action >= 4  :
             break
 
-menu()
+# menu()
+
+
+print("I'm Dev1")
