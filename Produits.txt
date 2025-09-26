@@ -1,6 +1,1 @@
-Clavier
-Souris
-Ecran
-Chaise
-Bureau
-Lampe
+Prod2

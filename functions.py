@@ -32,12 +32,34 @@ def GetMin2(List3):
     ProductMin = list(filter(lambda x : x[1] == MinPrix, List3))
     return ProductMin;
 
-def Luxe(ListLux)
-Lux = list(map(lambda x : x[1] >= 1000, ListLux))
-print("Lux :",len(Lux))
-for i in range(0,(len(Lux))):
-    if Lux[i] == True:
-        print(f"{ConbinList[i][0]} Cout {ConbinList[i][1]} DH (LUXE)")
-    elif Lux[i] == False:
-        print(f"{ConbinList[i][0]} Cout {ConbinList[i][1]} DH")
+def AddProduct(List1,List2):
+    Produit = input("Produit: ")
+    Prix = int(input("Prix: "))
+    if Produit in List1:
+        print("Produit existe")
+    elif Produit == '' or Prix == '':
+        print("invalid input")
+    else:
+        List1.append(Produit)
+        List2.append(Prix)
+        print("le Produit est Ajouter")
+
+def RemoveProduct(List,ListPRD):
+    Produit = input("Produit Nom: ")
+    print(Produit)
+    if Produit == " ":
+        print("invalid input")
+    elif Produit not in ListPRD:
+        print("Produit non existe")
+    else :
+        index = ListPRD.index(Produit)
+        del List[index]
+        print("le Produit est Supprimer")
+
+def ListedProduct(List):
+
+
+
+
+
 
