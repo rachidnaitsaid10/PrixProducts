@@ -32,6 +32,7 @@ def GetMin2(List3):
     ProductMin = list(filter(lambda x : x[1] == MinPrix, List3))
     return ProductMin;
 
+# ---------------------------------------------------------------------------------------------------------------------------------
 def AddProduct(List1,List2):
     Produit = input("Produit: ")
     Prix = int(input("Prix: "))
@@ -56,7 +57,18 @@ def RemoveProduct(List,ListPRD):
         del List[index]
         print("le Produit est Supprimer")
 
-def ListedProduct(List):
+def ListedProduct(products):
+    for x, y in products:
+        print(f"Produit: {x} ==> Prix:{y}")
+
+
+def SearchProd (List):
+    Product = input("Produit Nom: ")
+    if Product != "" :
+        FoundProduct = list(filter(lambda x : x[0] == Product, List))
+        return print(f"Produit: {FoundProduct[0][0]} ==> Prix:{FoundProduct[0][1]}");
+    else :
+        return print("invalid input")
 
 
 
